@@ -1,0 +1,720 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    
+}
+
+body {
+    min-width: 1081px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+h2 {
+    color: #FFFFFF;
+    font-family: "Druk Cyr", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 122px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+#hero-section {
+    position: relative;
+    
+    width: 100%;
+    height: 1024px;
+    
+    background-image: url("/img/main_photo.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: sans-serif;
+
+    border-left-style: solid;
+    border-left-color: #FF00B8;
+    border-left-width: 37px;
+    
+    color: #FFFFFF;
+
+
+}
+
+@media screen and (min-width: 1440px) {
+    #hero-section {
+        background-size: 100% 100%;
+    }
+}
+
+#hero-section .header-class {
+    position: absolute;
+    right: 0;
+    width: 219px;
+    height: 100%;
+
+    background: linear-gradient(180deg, #2C58C8 0%, #ff00b700 100%);
+
+    
+}
+
+#hero-section a.logo-img img{
+    display: block;
+    margin: 34px auto;
+    width: 68%;
+}
+
+#hero-section ul.menu {
+    position: absolute;
+    list-style: none;
+
+    /* margin: 100% 5%;    */
+    top: 37%;
+    left: 5%; 
+    /* right: 5%; */
+
+    text-align: center;
+    
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+#hero-section ul.menu li {
+    padding-bottom: 41px;
+}
+
+#hero-section ul.menu li a {
+    color: white;
+}
+
+
+#hero-section .info-panel {
+    position: absolute;
+    left: 0;
+    width: 448px;
+    height: 100%;
+    background: linear-gradient(180deg, #2C58C8 0%, #ff00b700 100%);
+    
+    /* border-left-style: solid;
+    border-left-color: #FF00B8;
+    border-left-width: 37px; */
+}
+
+#hero-section .info-panel .info-text1 {
+    mix-blend-mode: normal; 
+    -webkit-text-stroke: 2px #FF00E5; 
+    /* paint-order: stroke fill;
+
+
+    /* text-shadow:
+		-1px -1px 0 #FF00E5,
+		1px -1px 0 #FF00E5,
+		-1px 1px 0 #FF00E5,
+		1px 1px 0 #FF00E5; */
+    
+    text-align: right;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 125%;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+
+    margin: 34px 4.33% 0 28px;
+    padding-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #FF00B8;
+    border-bottom-width: 5px;
+}
+
+#hero-section .info-panel .info-text2 {
+    text-align: right;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 140.52%;
+    text-transform: uppercase;
+
+    width: 423px;
+    margin: 77px 0% 0 5px;
+}
+
+#hero-section .info-panel .button {
+    background-color: #FF00B8;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 29px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    /* padding: 20px; */
+    width: 256px;
+    height: 74px;
+    margin: 82px 20px 0 172px;
+}
+
+#advantages-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    
+    height: 1024px;
+    background: linear-gradient(180deg, #2F0147 0%, #1C2088 100%);
+
+    border-right-style: solid;
+    border-right-color: #FF00B8;
+    border-right-width: 37px;
+
+    font-family: "Druk Cyr", sans-serif;
+    font-style: italic;
+    color: #FFFFFF;
+}
+
+#advantages-section h2 {
+    /* margin: 60px 0 0 64px; */
+    margin-top: 60px;
+    /* margin-left: calc((100% - 1245px)/2); */
+    /* margin-left: 127px; */
+    
+    text-align: center;
+}
+
+#advantages-section .advantages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+   
+    
+    height: 840px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+#advantages-section .advantage-description {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: black 1px solid;
+}
+
+#advantages-section .advantage-description p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+#advantages-section .advantage-description img {
+    /* position: absolute;
+    display: block;
+    
+    bottom: 0;
+    left: 50px; */
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+}
+
+/* @media screen and (max-width: 1036px) {
+    .advantage-description.none1 {
+        display: none;
+    }
+} */
+
+/* @media screen and (max-width: 786px) {
+    .advantage-description.none2 {
+        display: none;
+    }
+} */
+
+#game-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 1024px;
+    background: linear-gradient(180deg, #1907A0 0%, #64009E 100%);
+
+    border-left-style: solid;
+    border-left-color: #FF00B8;
+    border-left-width: 37px;
+}
+
+#game-section h2{
+    
+    /* width: 628px; */
+    text-align: center;
+}
+
+#game-section .games {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-content: space-around;
+    height: 850px;
+    width: 100%;
+    max-width: 2000px;
+    margin: 20px auto 0 auto;
+}
+
+#game-section .games .game-description {
+    position: relative;
+    width: 650px;
+    height: 280px;
+    /* border: black 1px solid; */
+    margin-left: 10px;
+}
+
+#game-section .games .game-description img {
+    float: left;
+    max-width: 266px;
+}
+
+#game-section .games .game-description h3 {
+    margin-left: 292px;
+    font-family: 'Druk Cyr';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 55px;
+    
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    /* height: 150px; */
+    line-height: 80px;
+
+    color: #FF00B8;
+   
+}
+
+#game-section .games .game-description p {
+    margin-left: 292px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1360px) {
+    #game-section .games .game-description {
+        width: calc(650px * 0.7);
+        /* height: calc(280px * 0.7); */
+
+        /* width: 455px; */
+        height: 200px;
+    }
+    #game-section .games .game-description img {
+        max-width: calc(266px * 0.7);
+    }
+    #game-section .games .game-description h3 {
+        /* margin-left: calc(292px * 0.7);
+        font-size: calc(55px * 0.7);
+        line-height: calc(80px * 0.7); */
+
+        margin-left: 200px;
+        font-size: 37px;
+        line-height: 56px;
+    }
+    #game-section .games .game-description p {
+        /* margin-left: calc(292px * 0.7);
+        font-size: calc(20px * 0.7);
+        line-height: calc(28px * 0.7); */
+
+        margin-left: 200px;
+        font-size: 17px;
+        line-height: 21px;
+    }
+}
+
+#price-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 1024px;
+    background: linear-gradient(180deg, #761EB1 0%, #030641 100%);
+
+    border-right-style: solid;
+    border-right-color: #FF00B8;
+    border-right-width: 37px;
+    font-family: "Druk Cyr", sans-serif;
+    font-style: italic;
+}
+
+#price-section h2 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 292px;
+    text-align: center;
+    margin-left: 107px;
+
+}
+
+#price-section .prices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content: center;
+     height: 100%;
+    /* width: 750px;  */
+    max-width: 2000px;
+    /* margin: 20px auto 0 auto; */
+    
+    margin-left: 480px;
+}
+
+#price-section .prices .one-price {
+    position: relative;
+    width: 360px;
+    height: 360px;
+    background: #FFFFFF;
+    margin-right: 30px;
+    margin-bottom: 30px; 
+}
+
+#price-section .prices .one-price h3 {
+    /* margin-top: 23px;
+    margin-left: 59px; */
+
+    position: absolute;
+    left: 16.48%;
+    right: 8.94%;
+    top: 6.39%;
+    bottom: 74.17%;
+
+    height: 70px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #E0013F;
+}
+
+#price-section .prices .one-price p {
+    width: 184px;
+    height: 145px;
+
+    position: absolute;
+    left: 16.39%;
+    right: 32.5%;
+    top: 35.28%;
+    bottom: 24.44%;
+
+    /* margin-top: 56px;
+    margin-left: 59px; */
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 79px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+#price-section .prices .one-person img {
+    position: absolute;
+    left: 73.18%;
+    right: 5.2%;
+    top: 59.44%;
+    bottom: 2.41%;
+    width: 77.81px;
+    height: 137.31px;
+}
+
+#price-section .prices .four-person img {
+    position: absolute;
+    left: 80.17%;
+    right: 6.7%;
+    top: 3.61%;
+    bottom: 3.33%;
+    width: 47.26px;
+    height: 335px;
+}
+
+@media screen and (max-width: 1360px) {
+    #price-section .prices .one-price {
+        width: calc(360px * 0.7);
+        height: calc(360px * 0.7);
+    }
+    #price-section .prices .one-price h3 {
+        font-size: calc(32px * 0.7);
+        line-height: calc(38px * 0.7);
+        letter-spacing: calc(5px * 0.7);
+
+    }
+    #price-section .prices .one-price p {
+        width: 128.8px;
+        height: 101.5px;
+        font-size: calc(64px * 0.7);
+        line-height: calc(79px * 0.7);
+        letter-spacing: calc(5px * 0.7);
+    }
+    #price-section .prices .one-person img {
+
+        width: calc(77.81px * 0.7);
+        height: calc(137.31px * 0.7);
+
+    }
+    #price-section .prices .four-person img {
+        width: calc(47.26px * 0.7);
+        height: calc(335px * 0.7);
+    }
+
+}
+
+#contact-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 1024px;
+    background: linear-gradient(180deg, #07055C 0%, #8A176A 100%);
+
+    border-left-style: solid;
+    border-left-color: #FF00B8;
+    border-left-width: 37px;
+    /* font-family: "Druk Cyr", sans-serif;
+    font-style: italic; */
+}
+
+#contact-section .feedbacks-class {
+    position: relative;
+    height: 610px;
+}
+
+#contact-section .feedbacks-class h2 {
+    /* margin-top: 22px; */
+    text-align: center;
+}
+
+
+#contact-section .container {
+    margin-top: 50px;   
+    margin-bottom: 50px;             
+}
+
+#contact-section .container .carousel li {
+    position: relative;
+    float: left;
+    width: 562px;
+    height: 328px;
+    padding: 5px;
+    background: #FFFFFF;
+    
+    /* filter: drop-shadow(0px 35px 32px rgba(200, 215, 239, 0.5));    */
+}
+
+#contact-section .container .carousel li img {
+    position: absolute;
+    left: 5.69%;
+    right: 82.91%;
+    top: 12.18%;
+    bottom: 76.05%;
+}
+
+#contact-section .container .carousel li h3 {
+    position: absolute;
+    right: 6.98%;
+    top: 12.2%;
+    bottom: 76.22%;
+
+    font-family: 'Druk Cyr';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: right;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #0069E4;
+}
+
+#contact-section .container .carousel li p {
+    position: absolute;
+    left: 7.88%;
+    right: 7.07%;
+    top: 50%;
+    bottom: 13.78%;
+    transform: translate(0%, -50%);
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+#contact-section .conteiner-buttons {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 740px;    
+    /* margin: auto; */
+}
+
+#contact-section .conteiner-buttons button {
+    display: inline;
+    width: 340px;
+    /* width: 22.6vw; */
+    height: 60px;
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    background-image: url(/img/);
+    margin-right: 20px;
+}
+
+#contact-section .conteiner-buttons button#prev  {
+    background-image: url(/img/left-line.svg);
+    background-repeat: no-repeat;
+    background-size: 340px 60px;
+    /* border: 2px solid #4CAF50; */
+}
+
+
+#contact-section .conteiner-buttons #next {
+    background-image: url(/img/right-line.svg);
+    background-repeat: no-repeat;
+    background-size: 340px 60px;
+    
+    /* border: 2px solid #4CAF50; */
+}
+
+
+#contact-section .contact-class {
+    position: relative;
+    /* margin-top: 100px; */
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 400px;
+    width: 1300px;
+    margin: 0 auto;
+    
+}
+
+#contact-section .contact-class h2 {
+     /* position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%); 
+    width: 200px; 
+    text-align: center; 
+     margin-left: 107px; */
+    
+    text-align: left;
+}
+
+#contact-section .contact-class img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%); 
+
+    /* width: 55.5vw; */
+}
+
+#contact-section .contact-class div {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%); 
+    width: 380px;
+}
+
+#contact-section .contact-class div h2 {
+    line-height: 96px;
+    margin-bottom: 70px;
+}
+
+#contact-section .contact-class div p {
+    font-family: 'Druk Cyr';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1361px){
+    #contact-section .contact-class {
+        /* width: 90vw; */
+        width: calc(1300px * 0.7);
+    }
+        
+    #contact-section .contact-class img {
+        /* width: 55.5vw; */
+        width: calc(848px * 0.7);
+    }
+
+    #contact-section .contact-class div {
+
+        width: calc(380px * 0.7);
+    }
+
+    #contact-section .contact-class div h2 {
+        line-height: calc(96px * 0.7);
+        margin-bottom: calc(70px * 0.7);
+
+        font-size: calc(96px * 0.7);
+        line-height: calc(122px * 0.7);
+        letter-spacing: calc(8px * 0.7);
+    }
+
+    #contact-section .contact-class div p {
+
+        font-size: calc(32px * 0.7);
+        line-height: calc(50px * 0.7);
+        letter-spacing: calc(5px * 0.7);
+
+    }
+}
+
+@media screen and (max-width: 1081px) {
+    body {
+        overflow: scroll;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
