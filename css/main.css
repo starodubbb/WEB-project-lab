@@ -3,13 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
-    
+    outline: none;
+    scroll-behavior: smooth; 
 }
 
 body {
     min-width: 1081px;
 }
-
 
 a {
     text-decoration: none;
@@ -18,7 +18,6 @@ a {
 ul {
     list-style-type: none;
 }
-
 
 h2 {
     color: #FFFFFF;
@@ -33,24 +32,18 @@ h2 {
 
 #hero-section {
     position: relative;
-    
     width: 100%;
     height: 1024px;
-    
     background-image: url("/img/main_photo.png");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center top;
     /* font-family: 'Inter', sans-serif; */
     font-family: sans-serif;
-
     border-left-style: solid;
     border-left-color: #FF00B8;
-    border-left-width: 37px;
-    
+    border-left-width: 37px; 
     color: #FFFFFF;
-
-
 }
 
 @media screen and (min-width: 1440px) {
@@ -64,10 +57,7 @@ h2 {
     right: 0;
     width: 219px;
     height: 100%;
-
     background: linear-gradient(180deg, #2C58C8 0%, #ff00b700 100%);
-
-    
 }
 
 #hero-section a.logo-img img{
@@ -79,18 +69,14 @@ h2 {
 #hero-section ul.menu {
     position: absolute;
     list-style: none;
-
     /* margin: 100% 5%;    */
     top: 37%;
     left: 5%; 
     /* right: 5%; */
-
     text-align: center;
-    
     font-size: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    
 }
 
 #hero-section ul.menu li {
@@ -99,8 +85,12 @@ h2 {
 
 #hero-section ul.menu li a {
     color: white;
+    transition: color 500ms;
 }
 
+#hero-section ul.menu li a:hover {
+    color: #FF00B8;
+}
 
 #hero-section .info-panel {
     position: absolute;
@@ -108,24 +98,17 @@ h2 {
     width: 448px;
     height: 100%;
     background: linear-gradient(180deg, #2C58C8 0%, #ff00b700 100%);
-    
-    /* border-left-style: solid;
-    border-left-color: #FF00B8;
-    border-left-width: 37px; */
 }
 
 #hero-section .info-panel .info-text1 {
     mix-blend-mode: normal; 
     -webkit-text-stroke: 2px #FF00E5; 
     /* paint-order: stroke fill;
-
-
     /* text-shadow:
 		-1px -1px 0 #FF00E5,
 		1px -1px 0 #FF00E5,
 		-1px 1px 0 #FF00E5,
 		1px 1px 0 #FF00E5; */
-    
     text-align: right;
     font-style: normal;
     font-weight: 700;
@@ -133,7 +116,6 @@ h2 {
     line-height: 125%;
     text-transform: uppercase;
     letter-spacing: -0.04em;
-
     margin: 34px 4.33% 0 28px;
     padding-bottom: 5px;
     border-bottom-style: solid;
@@ -148,12 +130,11 @@ h2 {
     font-size: 25px;
     line-height: 140.52%;
     text-transform: uppercase;
-
     width: 423px;
     margin: 77px 0% 0 5px;
 }
 
-#hero-section .info-panel .button {
+.button {
     background-color: #FF00B8;
     border: none;
     color: #FFFFFF;
@@ -166,20 +147,93 @@ h2 {
     width: 256px;
     height: 74px;
     margin: 82px 20px 0 172px;
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+
+#hero-section .info-panel .button:hover {
+    /* background-color: rgb(34, 0, 255); */
+    background-color: rgb(23, 68, 200);  
+}
+
+#hero-section .popup-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);  
+}
+
+#hero-section .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 40%;
+    background-color: #cf1b9c;
+}
+
+#hero-section .popup-content h3 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+#hero-section .popup-content #close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#hero-section .popup-content form {
+    width: 80%;
+    margin: auto;
+}
+
+#hero-section .popup-content form .input-field {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+    font-size: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 29px;
+    transition: 0.5s;  
+}
+
+#hero-section .popup-content form .input-field:focus {
+    border-color: rgb(23, 68, 200);
+}
+
+#hero-section .popup-content form .input-field::placeholder {
+    opacity: 0.6;
+}
+
+#hero-section .popup-content form .button {
+    background-color: rgb(23, 68, 200);
+    display: block;
+    margin: 10px auto;
+}
+
+#hero-section .popup-content form .button:hover {
+    background-color: rgb(29, 54, 131);
 }
 
 #advantages-section {
     position: relative;
     overflow: hidden;
     width: 100%;
-    
     height: 1024px;
     background: linear-gradient(180deg, #2F0147 0%, #1C2088 100%);
-
     border-right-style: solid;
     border-right-color: #FF00B8;
     border-right-width: 37px;
-
     font-family: "Druk Cyr", sans-serif;
     font-style: italic;
     color: #FFFFFF;
@@ -190,7 +244,6 @@ h2 {
     margin-top: 60px;
     /* margin-left: calc((100% - 1245px)/2); */
     /* margin-left: 127px; */
-    
     text-align: center;
 }
 
@@ -200,8 +253,6 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
-   
-    
     height: 840px;
     max-width: 1500px;
     margin: auto;
@@ -262,7 +313,6 @@ h2 {
 }
 
 #game-section h2{
-    
     /* width: 628px; */
     text-align: center;
 }
@@ -298,7 +348,6 @@ h2 {
     font-style: italic;
     font-weight: 500;
     font-size: 55px;
-    
     letter-spacing: 5px;
     text-transform: uppercase;
     /* height: 150px; */
@@ -315,7 +364,6 @@ h2 {
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-
     color: #FFFFFF;
 }
 
@@ -516,17 +564,33 @@ h2 {
 
 
 #contact-section .container {
+    /* width: 9000px; */
     margin-top: 50px;   
-    margin-bottom: 50px;             
+    margin-bottom: 50px; 
+    overflow: hidden;
+    
+}
+
+#contact-section .container .carousel {
+    display: flex;
+    overflow: scroll; 
+    width: 100%;
+    overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 #contact-section .container .carousel li {
     position: relative;
-    float: left;
+    /* float: left; */
+
+    flex: 1 0 562px;
     width: 562px;
     height: 328px;
+    margin: 0 20px;
     padding: 5px;
     background: #FFFFFF;
+   
     
     /* filter: drop-shadow(0px 35px 32px rgba(200, 215, 239, 0.5));    */
 }
@@ -576,6 +640,7 @@ h2 {
     left: 50%;
     transform: translate(-50%, 0);
     width: 740px;    
+    
     /* margin: auto; */
 }
 
@@ -588,22 +653,31 @@ h2 {
     background: rgba(255, 255, 255, 0);
     background-image: url(/img/);
     margin-right: 20px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 400px 60px;
+    transition: background-size 500ms;
 }
 
-#contact-section .conteiner-buttons button#prev  {
+#contact-section .conteiner-buttons button:hover {
+    background-size: 600px 60px;
+}
+
+#contact-section .conteiner-buttons button:active {
+    border: none;
+}
+
+#contact-section .conteiner-buttons #prev  {
     background-image: url(/img/left-line.svg);
-    background-repeat: no-repeat;
-    background-size: 340px 60px;
-    /* border: 2px solid #4CAF50; */
+    background-position:left center;
+   /* background-size:cover; */
 }
 
 
 #contact-section .conteiner-buttons #next {
     background-image: url(/img/right-line.svg);
-    background-repeat: no-repeat;
-    background-size: 340px 60px;
-    
-    /* border: 2px solid #4CAF50; */
+    background-position:right center;
+   /* background-size:cover; */
 }
 
 
@@ -625,7 +699,6 @@ h2 {
     width: 200px; 
     text-align: center; 
      margin-left: 107px; */
-    
     text-align: left;
 }
 
@@ -634,7 +707,8 @@ h2 {
     top: 50%;
     right: 0;
     transform: translate(0, -50%); 
-
+    box-shadow: 0px 4px 50px 10px rgba(255, 255, 255, 0.5);
+    border-radius: 72px;
     /* width: 55.5vw; */
 }
 
@@ -660,6 +734,7 @@ h2 {
     text-transform: uppercase;
     
     color: #FFFFFF;
+    user-select: text;
 }
 
 @media screen and (max-width: 1361px){
@@ -674,25 +749,21 @@ h2 {
     }
 
     #contact-section .contact-class div {
-
         width: calc(380px * 0.7);
     }
 
     #contact-section .contact-class div h2 {
         line-height: calc(96px * 0.7);
         margin-bottom: calc(70px * 0.7);
-
         font-size: calc(96px * 0.7);
         line-height: calc(122px * 0.7);
         letter-spacing: calc(8px * 0.7);
     }
 
     #contact-section .contact-class div p {
-
         font-size: calc(32px * 0.7);
         line-height: calc(50px * 0.7);
         letter-spacing: calc(5px * 0.7);
-
     }
 }
 
@@ -701,6 +772,8 @@ h2 {
         overflow: scroll;
     }
 }
+
+
 
 
 

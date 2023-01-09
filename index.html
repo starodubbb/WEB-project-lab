@@ -5,39 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kpiVR</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet"> 
     <link href="/fonts/druk-cyr/stylesheet.css" rel = "stylesheet" type = "text/css" >
-    <link rel="stylesheet" href="css/main.css">
-
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="/js/jqueryCarousel.js"></script>        
-    <script type="text/javascript">
-            $(document).ready(function() {                             
-                    $('.container').Carousel({
-                    visible: 3,
-                    rotateBy: 1,
-                    speed: 1000,
-                    btnNext: '#next',
-                    btnPrev: '#prev',                      
-                    auto: false,                       
-                    backslide: true,   
-                    margin: 40,
-                    marginTopBottom: 50                     
-                    });
-            });
-    </script>
-
-
+    <link rel="stylesheet" href="css/main.css">   
 </head>
-<body>
-    
+<body>  
     <section id="hero-section">
         <div class="header-class">
-            
             <a href="/" class="logo-img">
                 <img src="/img/logo.svg" alt="logo">
             </a>
@@ -65,7 +42,19 @@
             <button class="button">забронювати</button>
         </div>
         <div class="left-pink-panel"></div>
-        
+        <div class="popup-container">
+            <div class="popup-content">
+                <div id="close-popup">X</div>
+                <h3>Забронювати гру</h2>
+                <form>
+                    <p><input class="input-field" type="text" id="name" name="name" placeholder="Ваше ім'я"> </p>
+                    <p><input class="input-field" type="email" id="email" name="email" placeholder="Ваше email"></p>
+                    <p><input class="input-field" type="tel" id="tel" name="tel" placeholder="Ваш номер телефону"></p>
+                    <input type="submit" class="button" value="Підтвердити">
+                </form>
+            </div>
+        </div>
+
     </section>
     <section id="advantages-section">
         <h2>наші переваги</h2>
@@ -213,5 +202,8 @@
         </div>
         <div class="left-pink-panel"></div>
     </section>
+
+    <script src="/js/app.js"></script>     
 </body>
 </html>
+
